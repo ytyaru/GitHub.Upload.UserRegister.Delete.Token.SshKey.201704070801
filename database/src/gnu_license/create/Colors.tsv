@@ -1,0 +1,7 @@
+Id	Key	Description
+0	green	自由ライセンス、GNU GPLと両立するもの
+1	purple	自由ライセンス、GNU FDLと両立するもの
+2	orange	自由ライセンス、GNU GPLとFDLとは両立しないもの
+3	red	不自由なライセンス
+4	blue	見解を述べる作品のためのライセンス
+

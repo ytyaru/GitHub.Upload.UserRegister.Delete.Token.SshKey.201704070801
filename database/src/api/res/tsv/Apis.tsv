@@ -1,0 +1,49 @@
+Id	Name	HttpMethod	Endpoint	AuthMethods	Grants	SuccessStatusCode	DocURL
+0	RootEndpoint	GET	https://api.github.com/	None,Basic,Token,ClientId		200	https://developer.github.com/v3/#root-endpoint
+1	Repositories.List	GET	user/repos	Basic,Token		200	https://developer.github.com/v3/repos/#list-your-repositories
+2	Repositories.Create	POST	user/repos	Basic,Token	repo	201	https://developer.github.com/v3/repos/#create
+3	Repositories.PublicRepository.Create	POST	user/repos	Basic,Token	public_repo	201	https://developer.github.com/v3/repos/#create
+4	Repositories.Edit	PATCH	repos/:owner/:repo	Basic,Token		200	https://developer.github.com/v3/repos/#edit
+5	Repositories.Delete	DELETE	repos/:owner/:repo	Basic,Token	delete_repo	204	https://developer.github.com/v3/repos/#delete-a-repository
+6	Repositories.Languages.List	GET	repos/:owner/:repo/languages	Basic,Token		200	https://developer.github.com/v3/repos/#list-languages
+7	Repositories.Contributors.List	GET	repos/:owner/:repo/contributors	Basic,Token		200	https://developer.github.com/v3/repos/#list-contributors
+8	Repositories.Tags.List	GET	repos/:owner/:repo/tags	Basic,Token		200	https://developer.github.com/v3/repos/#list-tags
+9	Repositories.Teams.List	GET	repos/:owner/:repo/teams	Basic,Token		200	https://developer.github.com/v3/repos/#list-teams
+10	Repositories.Get	GET	repos/:owner/:repo	Basic,Token		200	https://developer.github.com/v3/repos/#get
+11	Repositories.AllPublicRepositories.List	GET	repositories	Basic,Token		200	https://developer.github.com/v3/repos/#list-all-public-repositories
+12	Repositories.OrganizationRepositories.List	GET	orgs/:org/repos	None,Basic,Token		200	https://developer.github.com/v3/repos/#list-organization-repositories
+13	Repositories.UserRepositories.List	GET	users/:username/repos	None,Basic,Token		200	https://developer.github.com/v3/repos/#list-user-repositories
+14	Authorizations.List	GET	authorizations	Basic		200	https://developer.github.com/v3/oauth_authorizations/#list-your-authorizations
+15	Authorizations.Get	GET	authorizations/:id	Basic		200	https://developer.github.com/v3/oauth_authorizations/#get-a-single-authorization
+16	Authorizations.Create	POST	authorizations	Basic		201	https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization
+17	Authorizations.Update	PATCH	authorizations/:id	Basic		200	https://developer.github.com/v3/oauth_authorizations/#update-an-existing-authorization
+18	Authorizations.Delete	DELETE	authorizations/:id	Basic		204	https://developer.github.com/v3/oauth_authorizations/#delete-an-authorization
+19	Authorizations.Check	GET	applications/:client_id/tokens/:access_token	Basic		200	https://developer.github.com/v3/oauth_authorizations/#check-an-authorization
+20	Authorizations.Reset	POST	applications/:client_id/tokens/:access_token	Basic		200	https://developer.github.com/v3/oauth_authorizations/#reset-an-authorization
+21	Authorizations.Revoke	DELETE	applications/:client_id/tokens/:access_token	Basic		204	https://developer.github.com/v3/oauth_authorizations/#revoke-an-authorization-for-an-application
+22	Authorizations.Grants.List	GET	applications/grants	Basic		200	https://developer.github.com/v3/oauth_authorizations/#list-your-grants
+23	Authorizations.Grant.Get	GET	applications/grants/:id	Basic		200	https://developer.github.com/v3/oauth_authorizations/#get-a-single-grant
+24	Authorizations.Grant.Delete	DELETE	applications/grants/:id	Basic		204	https://developer.github.com/v3/oauth_authorizations/#delete-a-grant
+25	Miscellaneous.Licenses.List	GET	licenses	Basic,Token		200	https://developer.github.com/v3/licenses/
+26	Miscellaneous.Licenses.IndividualLicense.Get	GET	licenses/:license	Basic,Token		200	https://developer.github.com/v3/licenses/#get-an-individual-license
+27	Miscellaneous.Licenses.RepositoryLicense.Get	GET	repos/:owner/:repo	Basic,Token		200	https://developer.github.com/v3/licenses/#get-a-repositorys-license
+28	Miscellaneous.Licenses.ContentsOfRepositoryLicense.Get	GET	repos/:owner/:repo/license	Basic,Token		200	https://developer.github.com/v3/licenses/#get-the-contents-of-a-repositorys-license
+29	Users.TargetUser.Get	GET	users/:username	None,Basic,Token		200	https://developer.github.com/v3/users/#get-a-single-user
+30	Users.Get	GET	user	Basic,Token		200	https://developer.github.com/v3/users/#get-the-authenticated-user
+31	Users.Update	PATCH	user	Basic,Token		200	https://developer.github.com/v3/users/#update-the-authenticated-user
+32	Users.List	GET	users	Basic,Token		200	https://developer.github.com/v3/users/#get-all-users
+33	Users.SshKeys.TargetUserKey.List	GET	/users/:username/keys	Basic,Token		200	https://developer.github.com/v3/users/keys/#list-public-keys-for-a-user
+34	Users.SshKeys.List	GET	/user/keys	Basic,Token	read:public_key	200	https://developer.github.com/v3/users/keys/#list-your-public-keys
+35	Users.SshKeys.Get	GET	/user/keys/:id	Basic,Token	read:public_key	200	https://developer.github.com/v3/users/keys/#get-a-single-public-key
+36	Users.SshKeys.Create	POST	/user/keys	Basic,Token	write:public_key	201	https://developer.github.com/v3/users/keys/#create-a-public-key
+37	Users.SshKeys.Delete	DELETE	/user/keys/:id	Basic,Token	admin:public_key	204	https://developer.github.com/v3/users/keys/#delete-a-public-key
+38	Search.Repositories	GET	search/repositories	Basic,Token		200	https://developer.github.com/v3/search/#search-repositories
+39	Search.Commits	GET	search/commits	Basic,Token		200	https://developer.github.com/v3/search/#search-commits
+40	Search.Code	GET	search/code	Basic,Token		200	https://developer.github.com/v3/search/#search-code
+41	Search.Issues	GET	search/issues	Basic,Token		200	https://developer.github.com/v3/search/#search-issues
+42	Search.Users	GET	search/users	Basic,Token		200	https://developer.github.com/v3/search/#search-users
+43	Search.TextMatch	GET	search/...	Basic,Token		200	https://developer.github.com/v3/search/#text-match-metadata
+44	Issues.Timeline	GET	repos/:owner/:repo/issues/:issue_number/timeline	Basic,Token		200	https://developer.github.com/v3/issues/timeline/
+45	Repositories.Pages.Infomation	GET	repos/:owner/:repo/pages	Basic,Token		200	https://developer.github.com/v3/repos/pages/#get-information-about-a-pages-site
+46	Repositories.Pages.Build	POST	repos/:owner/:repo/pages/builds	Basic,Token		200	https://developer.github.com/v3/repos/pages/#request-a-page-build
+47	Activity.Starring.Stargazers.List	GET	/repos/:owner/:repo/stargazers	Basic,Token		200	https://developer.github.com/v3/activity/starring/#list-stargazers

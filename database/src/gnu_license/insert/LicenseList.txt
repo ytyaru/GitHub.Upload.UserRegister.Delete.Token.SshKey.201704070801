@@ -1,0 +1,16 @@
+10|agpl-3.0
+11|apache-2.0
+8|bsd-2-clause
+6|bsd-3-clause
+15|cc0-1.0
+9|epl-1.0
+12|gpl-2.0
+1|gpl-3.0
+14|isc
+4|lgpl-2.1
+2|lgpl-3.0
+7|mit
+3|mpl-2.0
+0|other
+5|unlicense
+

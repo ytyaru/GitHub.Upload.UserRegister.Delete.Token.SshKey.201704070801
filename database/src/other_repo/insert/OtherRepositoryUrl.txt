@@ -1,0 +1,12 @@
+https://github.com/kennethreitz/requests
+https://github.com/requests/requests-oauthlib
+https://github.com/pudo/dataset
+https://github.com/newvem/pytz
+https://github.com/gruns/furl
+https://github.com/getanewsletter/BeautifulSoup4
+https://github.com/martinblech/xmltodict
+https://github.com/python-pillow/Pillow
+https://github.com/ImageMagick/ImageMagick
+https://github.com/google/google-api-python-client
+https://github.com/yaml/pyyaml
+

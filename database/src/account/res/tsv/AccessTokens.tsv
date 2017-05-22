@@ -1,0 +1,4 @@
+Id	AccountId	IdOnGitHub	Note	AccessToken	Scopes	SshKeyId
+0	0	0	RepositoryControl	token0	delete_repo,repo	
+1	0	1	GistControl	token1	gist	
+2	1	2	FullControl	token2		admin:gpg_key,admin:org,admin:org_hook,admin:public_key,admin:repo_hook,delete_repo,gist,notifications,repo,user	
